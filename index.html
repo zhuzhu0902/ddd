@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="wap-font-scale" content="no">
+    <meta name="description"
+        content="爱Z依"/>
+    <meta name="keywords" content="爱Z依" />
+    <title>爱Z依</title>
+    <link rel="stylesheet" href="css/ymdyEnjoy.css" />
+    <meta name="robots" content="none,noindex,nofollow,noodp,noydir" />
+    <meta name="viewport" content="width=device-width, viewport-fit=cover">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?73867c1c96daaa31d6c2809c80928573";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+        </script>
+    </script>
+</head>
+<body>
+    <div class='mobielPhone'>
+        <img class='ymdyLogo' src="./images/icon.png" alt="" />
+        <div class='mobileTitle'>爱Z依</div>
+        <!-- <img class='mobilePic' src="./images/mobilePic.png" alt="" /> -->
+        <a href="https://apps.apple.com/cn/app/id6446467920" target="_blank">
+            <div class='mobileDownloadBtn mobielIos'>iPhone版</div>
+        </a>
+        <!-- <div class='mobileDownloadBtn mobileAnd'>敬请期待</div> -->
+        
+        <!-- <a href="https://files.yert.video/yumi_311.apk" target="_blank">
+            <div class='mobileDownloadBtn mobileAnd'>安卓版</div>
+        </a> -->
+        <div class='qqPhone'>联系我们</div>
+        <div class='qqLink'>邮箱：<a href="wumenglin1@icloud.com">wumenglin1@icloud.com</a></div>
+        <!-- <div class="linkUrl">
+            <span>友情链接：</span>
+            <a href="https://www.52z.com" target="_blank">飞翔下载</a>
+            <a href="https://www.haote.com" target="_blank">好特下载</a>
+            <a href="https://www.dijiu.com" target="_blank">第九软件网</a>
+            <a href="https://www.hackhome.com" target="_blank">嗨客手机站</a>
+            <a href="https://www.yqdown.com" target="_blank">友情下载</a>
+            <a href="https://www.vipcn.com" target="_blank">清风手游网</a>
+            <a href="http://www.downcc.com" target="_blank">绿色资源网</a>
+            <a href="https://www.newasp.net" target="_blank">新云下载</a>
+            <a href="https://www.7down.com/" target="_blank">第七下载</a>
+            <a href="http://www.ruan8.com" target="_blank">软吧下载PC</a>
+            <a href="http://m.ruan8.com" target="_blank">软吧下载移动端</a>
+            <a href="http://www.17xsj.com" target="_blank">新视觉下载PC</a>
+            <a href="http://m.17xsj.com" target="_blank">新视觉下载移动端</a>
+        </div> -->
+    </div>
+    <div class="opacity" style='display: none;'></div>
+    <div class='weixinEnjoy' style='display: none;'>
+        <img src="./images/downloadtip.png" alt="">
+    </div>
+    <script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="js/shipei.js" type="text/javascript"></script>
+    <script>
+        $(function () {
+            isIpad();
+            if (isWeixin() && !isIos()) {
+                $('.opacity,.weixinEnjoy').show();
+            } else {
+                $('.opacity,.weixinEnjoy').hide();
+            }
+            var height = $(window).height();
+            var width = $(window).width();
+            $('.mobielPhone,.ngContainer').css({
+                'minHeight': height
+            });
+            // $('.downloadIcon').click(function () {
+            //     $(this).addClass('activeClass').parents('a').siblings().children('.downloadIcon')
+            //         .removeClass('activeClass');
+            // })
+            // $('.mobileDownloadBtn').click(function () {
+            //     $(this).addClass('activeClass').parents('a').siblings('a').children(
+            //         '.mobileDownloadBtn').removeClass('activeClass');
+            // })
+            
+        })
+
+        function isWeixin() {
+            var ua = navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == "micromessenger") {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        function isIos() {
+            var u = navigator.userAgent;
+            var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+            var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+            return isiOS;
+        }
+
+        //判断是否使用的是ipad
+        function isIpad() {
+            var ua = navigator.userAgent.toLowerCase();
+            if (/ipad/i.test(ua)) {
+                $('.linkUrl').addClass('fixedLink');
+            } else {
+                $('.linkUrl').removeClass('fixedLink');
+            }
+        }
+    </script>
+</body>
+
+</html>

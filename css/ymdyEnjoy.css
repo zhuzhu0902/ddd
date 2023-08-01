@@ -1,0 +1,361 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 14px;
+    vertical-align: baseline;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+html{
+   font-size: 20px;}
+body {
+    color: #666;
+    font-family:Arial,Helvetica,sans-serif;
+    margin: 0 auto;
+    /* background:#101010; */
+}
+input,button,textarea{
+    background: none;
+    border: 0px;
+    border-radius: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+:focus {
+    outline: 0;
+}
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+    color:#fff;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.listcontainer{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background: #eee;
+    padding-bottom: .426rem;
+}
+.ngContainer,.mobielPhone{
+    width: 100%;
+    height: 100%;
+    display: -moz-box;  
+    display: -ms-flexbox;   
+    display: -webkit-box;    
+    display: -webkit-flex;   
+    display: box; 
+    display: flexbox; 
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -moz-box-pack: center;
+    -webkit-box-pack: center;
+    -webkit-align-items:center;
+    -moz-align-items:center;
+    -ms-align-items:center;
+    -o-align-items:center;
+    align-items:center;
+    position: relative;
+    background: url(../images/nanguaBg.jpg) repeat 0 0 transparent;
+    background-size:100% 100%;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+.contentWidth1024{
+    display: -moz-box;  /* Firefox */
+    display: -ms-flexbox;    /* IE10 */
+    display: -webkit-box;    /* Safari */ 
+    display: -webkit-flex;    /* Chrome, WebKit */
+    display: box; 
+    display: flexbox; 
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row; 
+    flex-direction:row;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -moz-box-pack: space-between;
+    -webkit-box-pack: space-between;
+    width:700px;
+    margin: 0px auto 70px;
+    align-items: center;
+}
+.showPicture{
+    width:400px;
+    height: 389px;
+}
+.qrCode{
+    width:146px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+.downloadIcon{
+    position: relative;
+    width:137px;height: 41px;
+    line-height: 41px;
+    border-radius: 8px;
+    border:0.5px solid #fff;
+    font-size: 16px;
+    color:#fff;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    text-indent: 15px;
+    cursor: pointer;
+}
+.pcIos::after{
+    content:'';
+    position: absolute;
+    left: 20px;
+    top:8px;
+    width:16px;height: 20px;
+    background: url(../images/iosBtn.png);
+}
+.pcAnd::after{
+    content:'';
+    position: absolute;
+    left: 20px;
+    top:7px;
+    width:19px;height: 24px;
+    background: url(../images/android.png);
+}
+.downloadIcon:hover{
+    background: #bd180a !important;
+    border:0px !important;
+    box-shadow:0 0 0 0px !important;
+}
+.activeClass{
+    background: #bd180a !important;
+    border:0px !important;
+    box-shadow:0 0 0 0px !important;
+}
+.mobielPhone{
+    position: relative;
+    display: -moz-box;  /* Firefox */
+    display: -ms-flexbox;    /* IE10 */
+    display: -webkit-box;    /* Safari */ 
+    display: -webkit-flex;    /* Chrome, WebKit */
+    display: box; 
+    display: flexbox; 
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column; 
+    flex-direction:column;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -moz-box-pack: center;
+    -webkit-box-pack: center;
+    -webkit-align-items:center;
+    -moz-align-items:center;
+    -ms-align-items:center;
+    -o-align-items:center;
+    align-items:center;
+}
+.mobileTitle {
+    font-size: .25rem;
+    font-family: "PingFang SC";
+    color: #fff;
+    text-align: center;
+    margin-bottom: .24rem;
+    margin-top: .13rem;
+  }
+.mobilePic{
+    width:2.43rem;
+    height: 4.99rem;
+    padding-bottom: .5rem;
+}
+.mobileDownloadBtn{
+    position: relative;
+    width:1.88rem;
+    height: 0.48rem;
+    border-radius: .1rem;
+    text-align: center;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, .8);
+    font-size: .16rem;
+    line-height: .48rem;
+    font-family: "PingFang SC";
+    color: rgb(255, 255, 255);
+    margin-bottom: .2rem;
+}
+.mobielIos::after{
+    content:'';
+    position: absolute;
+    left: 20px;
+    top:.13rem;
+    width:16px;height: 20px;
+    background: url(../images/iosBtn.png);
+}
+.mobileAnd::after{
+    content:'';
+    position: absolute;
+    left: .2rem;
+    top:.1rem;
+    width:19px;height: 24px;
+    background: url(../images/android.png);
+}
+.mobileAnd{
+    margin-bottom: .5rem;
+}
+.qqPhone{
+    /* width:76%; */
+    width: 100%;
+    /* position: fixed; */
+    /* bottom: 42px; */
+    /* bottom: 55px; */
+    text-align: center;
+    font-size: .14rem;
+    font-family: "PingFang SC";
+    text-align: center;
+    color: rgba(255, 255, 255, 0.802);
+    font-family: "PingFang SC";
+}
+.qqLink{
+    /* position: fixed; */
+    /* bottom: 35px; */
+    font-size: .12rem;
+    color: rgba(255, 255, 255, 0.502);
+    padding: 0.1rem 0 0.4rem 0;
+}
+.qqLink a{
+    color: rgba(255, 255, 255, 0.502);
+}
+.weixinEnjoy{
+    width:66%;
+    position: absolute;
+    top:8%;
+    left:25%;
+    z-index: 1002;
+  }
+  .weixinEnjoy img{
+    width:100%;
+  }
+  .opacity{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.8);
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    z-index: 1001;
+  }
+/* // */
+.policy-content{
+    background: #fff !important;
+  }
+.policy-content ul{
+    padding:0.2rem;
+    text-align: left;
+}
+
+.policy-content ul li {
+    font-size: 0.16rem;
+    line-height: 0.3rem;
+    color:#000;
+    font-weight: 200;
+    font-family: '微软雅黑';
+    text-align: left;
+}
+
+.policy-content ul li b {
+    font-weight: bold !important;
+    text-align: left;
+}
+
+.policy-content ul li span {
+    font-weight: 400;
+    text-align: left;
+    color:#666;
+}
+
+.policy-content ul li b,
+span {
+    font-size: 0.16rem;
+    color: #333;
+    font-family: '微软雅黑';
+    text-align: left;
+}
+
+.policy-content ul li.content-list {
+    margin-bottom: 0.2rem;
+    text-align: left;
+}
+.adClass{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+.ymdyLogo{
+    width:0.7rem;
+    height: 0.7rem;
+    padding-top: 0.3rem;
+}
+
+.linkUrl{
+    width: 90%;
+    bottom: 0px;
+    padding: 0.1rem 5%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+.linkUrl a,span{
+    font-size: .14rem;
+    font-family: "PingFang SC";
+    color: rgba(255, 255, 255, 0.802);
+    padding: 0 0.05rem 0.02rem 0.05rem;
+    display: inline-block;
+}
+.linkUrl a:hover{
+    color:rgba(255, 111, 94, 1);
+}
+.fixedLink{
+    position: fixed;
+    bottom: 0;
+}
