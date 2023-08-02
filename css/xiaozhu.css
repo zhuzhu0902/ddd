@@ -96,7 +96,7 @@ a {
     -o-align-items:center;
     align-items:center;
     position: relative;
-    background: url(../images/nanguaBg.jpg) repeat 0 0 transparent;
+    background: url(../images/PCBG.jpg) repeat 0 0 transparent;
     background-size:100% 100%;
     overflow: hidden;
     background-attachment: fixed;
@@ -152,15 +152,7 @@ a {
     left: 20px;
     top:8px;
     width:16px;height: 20px;
-    background: url(../images/iosBtn.png);
-}
-.pcAnd::after{
-    content:'';
-    position: absolute;
-    left: 20px;
-    top:7px;
-    width:19px;height: 24px;
-    background: url(../images/android.png);
+    background: url(../images/iOSICON.png);
 }
 .downloadIcon:hover{
     background: #bd180a !important;
